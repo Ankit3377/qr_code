@@ -1,0 +1,107 @@
+.qr-code-page {
+    display: flex;
+    font-family: sans-serif;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.options-container {
+    width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.qr-preview-container {
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.options-container h2,
+.options-container h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.options-container div {
+    margin-bottom: 15px;
+}
+
+.options-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.options-container input[type="text"],
+.options-container input[type="number"],
+.options-container input[type="color"],
+.options-container select {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+
+.options-container input[type="file"] {
+   margin-bottom: 10px;
+}
+
+.options-container input[type="radio"] {
+    margin-right: 5px;
+}
+
+.options-container button,
+.options-container select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 5px;
+    
+}
+
+.options-container button:disabled {
+    background-color: #e0e0e0;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.qr-preview-container #qr-code {
+    margin-bottom: 10px;
+}
+
+
+.qr-preview-container button, .qr-preview-container select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+
+/* Responsive styles for smaller screens */
+@media (max-width: 800px) {
+    .qr-code-page {
+        flex-direction: column;
+    }
+
+    .options-container, .qr-preview-container {
+        width: 100%;
+        padding: 10px;
+    }
+}
